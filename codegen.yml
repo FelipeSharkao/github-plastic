@@ -1,0 +1,10 @@
+schema: http://docs.github.com/public/schema.docs.graphql
+documents: "./gql/documents/**/*.gql"
+generates:
+  ./gql/index.tsx:
+    config:
+      skipTypename: true
+    plugins:   
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
