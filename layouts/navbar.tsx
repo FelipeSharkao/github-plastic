@@ -1,16 +1,9 @@
 import HeaderLayout, { H_HEIGHT } from './header'
-import { ReactElement, useCallback, useContext, useState } from 'react'
-import {
-  faBars,
-  faHome,
-  faSignOutAlt,
-  faUser,
-} from '@fortawesome/free-solid-svg-icons'
+import { ReactElement, useContext, useState } from 'react'
+import { faHome, faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons'
 import styled, { css } from 'styled-components'
 
-import Button from '@/components/button'
 import { ClickablePanel } from '@/components/clickable-panel'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Icon from '@/components/icon'
 import Link from 'next/link'
 import { SessionContext } from '@/contexts/session'
